@@ -128,7 +128,10 @@
     background: var(--cta-bg); color: var(--cta-text);
     box-shadow: var(--shadow-offset) var(--shadow-offset) 0 0 var(--btn-shadow);
     cursor: default;
+    text-decoration: none;
   }
+  /* 출시 전에는 span이라 눌리지 않는다. a로 바뀌었을 때만 링크처럼 보이게 한다 */
+  a.btn { cursor: pointer; }
   a.btn, button.btn {
     text-decoration: none; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
     font-family: 'Galmuri11', -apple-system, sans-serif;
@@ -263,7 +266,7 @@
       <h1 class="pixel">오늘 읽은 문장,<br />냥냥서가에 옮겨둘까요?</h1>
       <p class="sub">책 페이지를 사진으로 찍으면 문장이 그대로 기록돼요. 계정을 만들지 않아도 서재·인용구·메모·단어장을 전부 쓸 수 있어요.</p>
       <div class="cta-row">
-        <span class="btn pixel">App Store 출시 준비 중</span>
+        <a class="btn pixel" href="https://apps.apple.com/kr/app/id6806888734">App Store에서 받기</a>
         <a class="link-arrow pixel" href="#contact">문의하기 →</a>
       </div>
     </div>
