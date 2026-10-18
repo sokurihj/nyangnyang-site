@@ -25,7 +25,7 @@
 
 <h2>At a glance</h2>
 <ul>
-<li><strong>What we collect:</strong> nothing is required. If you choose to sign in, we receive your email address, an account identifier and a nickname. If you sign in, we also back up the text of your books, quotes, notes and wordbook.</li>
+<li><strong>What we collect:</strong> nothing is required. If you choose to sign in, we receive your email address, an account identifier and a nickname. If you sign in, we also back up your books, quotes and notes.</li>
 <li><strong>What we don't do:</strong> no advertising, no analytics or tracking SDKs, no cookies, no selling of data. Photos are never stored on our servers.</li>
 <li><strong>Works without an account:</strong> adding books, saving quotes and notes, the reading timer and collecting cats all work on your device without signing in.</li>
 <li><strong>Public feed:</strong> only posts you choose to publish are shown to other users, with your nickname. Unpublishing removes them.</li>
@@ -43,8 +43,9 @@
 <thead><tr><th>Category</th><th>Data</th><th>Where it is stored</th></tr></thead>
 <tbody>
 <tr><td>Account (only if you sign in)</td><td>Email address and account identifier from Google or Apple, and the nickname you enter. If you use &ldquo;Hide My Email&rdquo; with Apple, we only receive Apple&rsquo;s anonymous relay address.</td><td>Our server</td></tr>
-<tr><td>Backup (only if you sign in)</td><td>Text of your books (title, author, ISBN, cover image address, category, reading status, page counts, target finish date), quotes, page numbers, notes and wordbook entries.</td><td>Our server</td></tr>
+<tr><td>Backup (only if you sign in)</td><td>Your books (title, author, ISBN and cover image address) and your quotes (quote text, page number and note). Everything else, such as reading status, wordbook, reading time and cats, stays on your device.</td><td>Our server</td></tr>
 <tr><td>Public feed posts (only if you publish)</td><td>Quote text, note, nickname, the book title and author as they were when you published, and the app language at that time. Likes, reports and blocks are also stored.</td><td>Our server</td></tr>
+<tr><td>Letters you send (optional)</td><td>The text of a letter written in Settings &gt; Write a letter, plus the app version, the platform (iOS or Android) and the time it was sent. Letters can be sent without signing in; if you are signed in, the letter is linked to your account.</td><td>Our server</td></tr>
 <tr><td>Reading time, target time, finished-book and cat records</td><td>Timer start and end times, the target time you set, books finished and cats collected.</td><td>Your device only</td></tr>
 <tr><td>Photos</td><td>Pictures you take or pick from your library to capture a passage.</td><td>Your device only</td></tr>
 <tr><td>Purchase status</td><td>A single &ldquo;purchase completed&rdquo; flag reported by Apple or Google. We never receive your card or bank details.</td><td>Your device only</td></tr>
@@ -69,11 +70,12 @@
 <thead><tr><th>Purpose</th><th>Legal basis</th></tr></thead>
 <tbody>
 <tr><td>Signing you in and keeping you signed in; showing your nickname</td><td>Contract (Art. 6(1)(b)) — providing the account you asked for</td></tr>
-<tr><td>Backing up and restoring your books, quotes, notes and wordbook</td><td>Contract (Art. 6(1)(b))</td></tr>
+<tr><td>Backing up and restoring your books, quotes and notes</td><td>Contract (Art. 6(1)(b))</td></tr>
 <tr><td>Recognising text in your photos on Android</td><td>Contract (Art. 6(1)(b)) — the feature you request each time</td></tr>
 <tr><td>Looking up books by title or barcode (see Section 4)</td><td>Contract (Art. 6(1)(b))</td></tr>
 <tr><td>Publishing a post to the public feed and showing it to other users</td><td>Consent (Art. 6(1)(a)) — you choose to publish; you can withdraw at any time by unpublishing</td></tr>
 <tr><td>Likes, reports and blocks; removing unlawful or rule-breaking posts; protecting the service from abuse</td><td>Legitimate interests (Art. 6(1)(f)) — keeping the community safe and the service working — and legal obligations under the Digital Services Act (Art. 6(1)(c))</td></tr>
+<tr><td>Reading and answering your letters, fixing bugs and improving the app</td><td>Legitimate interests (Art. 6(1)(f)) — understanding and answering the feedback you chose to send us</td></tr>
 <tr><td>Unlocking paid features</td><td>Contract (Art. 6(1)(b))</td></tr>
 </tbody>
 </table>
@@ -99,11 +101,12 @@
 <tr><td>Book search by title (Korean app language)</td><td>The title or other search term</td><td>Kakao book search API (Korea)</td></tr>
 <tr><td>Barcode lookup, ISBN starting 978-4 (Japanese books)</td><td>The ISBN</td><td>National Diet Library of Japan search API; Open Library</td></tr>
 <tr><td>Barcode lookup, other foreign books</td><td>The ISBN</td><td>Open Library</td></tr>
-<tr><td>Barcode lookup, Korean books (978-89, 979-11) and page count / cover completion</td><td>The ISBN</td><td>Kakao book search API; Aladin product lookup API (Korea)</td></tr>
+<tr><td>Barcode lookup, Korean books (ISBN starting 978-89 or 979-11), and a last attempt for any barcode not found elsewhere</td><td>The ISBN</td><td>Kakao book search API (Korea)</td></tr>
+<tr><td>Page count and cover completion on a book&rsquo;s screen</td><td>The ISBN</td><td>Aladin product lookup API (Korea)</td></tr>
 <tr><td>Word definitions (Korean app language only)</td><td>The word</td><td>National Institute of Korean Language dictionaries (Korea)</td></tr>
 </tbody>
 </table>
-<p>Requests to Open Library, the National Diet Library, Kakao, Aladin and the Korean dictionaries are sent directly from your device, so, as with any internet request, those services can see your IP address. They handle it under their own privacy policies.</p>
+<p>Requests to Open Library, the National Diet Library, Kakao, Aladin and the Korean dictionaries are sent directly from your device, so, as with any internet request, those services can see your IP address. They handle it under their own privacy policies. Book cover images are also loaded directly from their source (Open Library, Google Books, Kakao or Aladin), so those services can see your IP address when a cover is shown.</p>
 
 <h2>5. International transfers (Chapter V GDPR)</h2>
 <ul>
@@ -119,10 +122,11 @@
 <thead><tr><th>Data</th><th>How long we keep it</th></tr></thead>
 <tbody>
 <tr><td>Account data and nickname</td><td>Until you delete your account; deleted immediately</td></tr>
-<tr><td>Backed-up books, quotes, notes, wordbook</td><td>Until you delete your account; deleted immediately</td></tr>
+<tr><td>Backed-up books, quotes and notes</td><td>Until you delete your account; deleted immediately</td></tr>
 <tr><td>Feed posts, likes, reports, blocks</td><td>Until you unpublish or delete your account; deleted immediately</td></tr>
 <tr><td>Photos, reading time, finished-book and cat records, purchase flag</td><td>Only on your device. They disappear when you delete them in the app or uninstall it.</td></tr>
 <tr><td>Photos sent for Android text recognition</td><td>Not stored; discarded after each request</td></tr>
+<tr><td>Letters</td><td>As long as we need them to respond and to improve the app. You can ask us by email to delete yours. When you delete your account, the link between your letters and your account is removed, but the text of a letter may remain without your account; after that we may no longer be able to find your letters.</td></tr>
 </tbody>
 </table>
 <p>We do not keep payment or transaction records ourselves. Apple or Google keep them as the payment processor. Deleted data is removed from the database and cannot be recovered. There is no separate archive.</p>
