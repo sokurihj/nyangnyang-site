@@ -22,7 +22,7 @@
 <div class="legal-tabs"><span class="pill solid">Privacy Notice</span><a class="pill" href="terms.html">Terms of Service</a></div>
 <div class="legal-tabs"><a class="pill" lang="ko" hreflang="ko" href="../privacy.html">한국어</a><span class="pill solid" lang="en">English</span><a class="pill" lang="ja" hreflang="ja" href="../ja/privacy.html">日本語</a></div>
 <h1>Meow Shelf Privacy Notice</h1>
-<p>Effective October 29, 2026 (announced October 22, 2026). Until then, the version effective October 25, 2026 applies (see the revision history).</p>
+<p>Effective October 29, 2026 (announced October 22, 2026). Until then, the version effective October 25, 2026 applies (see the revision history). The random device number and the Google ML Kit diagnostic data for Android text recognition apply from October 25, 2026, together with the Android app launch.</p>
 <p>This is the English version of our privacy policy, prepared for users outside Korea. If it conflicts with the Korean version, the Korean version prevails, except where the law of your country of residence requires otherwise.</p>
 
 <h2>At a glance</h2>
@@ -55,13 +55,14 @@
 <tr><td>Purchase status</td><td>A single &ldquo;purchase completed&rdquo; flag reported by Apple or Google. We never receive your card or bank details.</td><td>Your device only</td></tr>
 </tbody>
 </table>
-<p>We do not collect any data automatically (no analytics, advertising or crash-reporting tools). We do not process special categories of personal data (Art. 9 GDPR) on purpose. Quotes and notes are free text that you write yourself, so please do not enter sensitive information you don&rsquo;t want stored.</p>
+<p>We do not use analytics, advertising or crash-reporting tools. The only thing recorded automatically is on Android: when you ask the app to recognise text, it sends a random device number it generated itself, and our server keeps that number with the day&rsquo;s request count for three days to limit abuse, then deletes it. It is not linked to your email, nickname, photos or account, is not used for advertising or tracking, and changes if you reinstall the app. Also on Android, when on-device text recognition is used, Google ML Kit does not send the photo or the recognised text, but it may send Google diagnostic and usage data: device information (manufacturer, model, OS version), app information (package name, version), a per-installation identifier that is not meant to identify you or your device, performance metrics and error codes. Google handles this data under its own privacy policy. iOS does neither. How to object: this data is sent only when you use photo text recognition on Android. If you don&rsquo;t want it sent, type your quote in yourself instead of using recognition; nothing is sent and every other feature works as usual. Any device number already on our server is deleted automatically after three days. We do not process special categories of personal data (Art. 9 GDPR) on purpose. Quotes and notes are free text that you write yourself, so please do not enter sensitive information you don&rsquo;t want stored.</p>
 <p>Camera (to capture passages and scan barcodes), photo library (to pick a book photo) and notification permissions are all optional. If you decline one, only that feature is unavailable.</p>
 
 <h3>Camera, photos and text recognition</h3>
 <ul>
 <li><strong>iOS:</strong> text in a photo is recognised on your device with Apple Vision. The photo does not leave your device.</li>
-<li><strong>Android:</strong> each time you ask the app to recognise text, the photo is sent through our server function (Supabase) to Google Cloud Vision (Google LLC). We do not store the photo and only return the recognised text to the app. Google states that in this mode it processes the image in memory without writing it to disk and does not use it to train its models. If you are offline, or the daily limit of this service is reached, the app uses Google ML Kit on your device instead, and nothing leaves your device.</li>
+<li><strong>Android:</strong> each time you ask the app to recognise text, the photo is sent through our server function (Supabase) to Google Cloud Vision (Google LLC). We do not store the photo and only return the recognised text to the app. Google states that in this mode it processes the image in memory without writing it to disk and does not use it to train its models. If you are offline, or the daily limit of this service is reached, the app uses Google ML Kit on your device instead, and the photo does not leave your device. Google ML Kit does not send the photo or the recognised text, but it may send Google diagnostic and usage data: device information (manufacturer, model, OS version), app information (package name, version), a per-installation identifier that is not meant to identify you or your device, performance metrics and error codes. Google handles this data under its own privacy policy.</li>
+<li><strong>Android:</strong> to limit how many times one device can use text recognition each day, the app also sends a random device number it generated itself with each request. It is not linked to you and changes if you reinstall the app. The server keeps this number and the day&rsquo;s request count for three days from the day recorded, then deletes them.</li>
 </ul>
 
 <h3>Notifications</h3>
@@ -77,6 +78,7 @@
 <tr><td>Signing you in and keeping you signed in; showing your nickname</td><td>Contract (Art. 6(1)(b)) — providing the account you asked for</td></tr>
 <tr><td>Backing up and restoring your books, quotes, notes and wordbook</td><td>Contract (Art. 6(1)(b))</td></tr>
 <tr><td>Recognising text in your photos on Android</td><td>Contract (Art. 6(1)(b)) — the feature you request each time</td></tr>
+<tr><td>Limiting daily text recognition per device on Android (random device number)</td><td>Legitimate interests (Art. 6(1)(f)) — preventing abuse and keeping the cost of the service under control</td></tr>
 <tr><td>Looking up books by title or barcode (see Section 4)</td><td>Contract (Art. 6(1)(b))</td></tr>
 <tr><td>Publishing a post to the public feed and showing it to other users</td><td>Consent (Art. 6(1)(a)) — you choose to publish; you can withdraw at any time by unpublishing</td></tr>
 <tr><td>Likes, reports and blocks; removing unlawful or rule-breaking posts; protecting the service from abuse</td><td>Legitimate interests (Art. 6(1)(f)) — keeping the community safe and the service working — and legal obligations under the Digital Services Act (Art. 6(1)(c))</td></tr>
@@ -132,6 +134,7 @@
 <tr><td>Feed posts, likes, reports, blocks</td><td>Until you unpublish or delete your account; deleted immediately</td></tr>
 <tr><td>Photos, reading time, finished-book and cat records, purchase flag</td><td>Only on your device. They disappear when you delete them in the app or uninstall it.</td></tr>
 <tr><td>Photos sent for Android text recognition</td><td>Not stored; discarded after each request</td></tr>
+<tr><td>Random device number and daily request count (Android text recognition)</td><td>Deleted three days after the day recorded</td></tr>
 <tr><td>Email you send us</td><td>3 years after we reply, then deleted</td></tr>
 <tr><td>Letters</td><td>3 years after we receive them, then deleted. You can ask us by email to delete yours sooner. When you delete your account, the link between your letters and your account is removed, but the text of a letter may remain without your account; after that we may no longer be able to find your letters.</td></tr>
 </tbody>
@@ -173,6 +176,7 @@
 <p><strong>Revision history</strong></p>
 <ul>
 <li>October 25, 2026 — First English version. It follows the Korean notice effective the same day (reading-timer notifications, book lookup services including Open Library, the National Diet Library of Japan and Google Books, target time, app language stored with feed posts).</li>
+<li>October 25, 2026 — Added the random device number used to limit daily text recognition per device on Android, and the diagnostic data that on-device recognition (Google ML Kit) may send to Google (applies from the Android app launch).</li>
 <li>October 29, 2026 — Added how we handle email you send us (Gmail, legal basis, retention), optional permissions, and a fixed 3-year retention period for letters (announced October 22, 2026).</li>
 </ul>
 </article>
