@@ -22,7 +22,7 @@
 <div class="legal-tabs"><span class="pill solid">Privacy Notice</span><a class="pill" href="terms.html">Terms of Service</a></div>
 <div class="legal-tabs"><a class="pill" lang="ko" hreflang="ko" href="../privacy.html">한국어</a><span class="pill solid" lang="en">English</span><a class="pill" lang="ja" hreflang="ja" href="../ja/privacy.html">日本語</a></div>
 <h1>Meow Shelf Privacy Notice</h1>
-<p>Effective October 29, 2026 (announced October 22, 2026). Until then, the version effective October 25, 2026 applies (see the revision history). The random device number and the Google ML Kit diagnostic data for Android text recognition apply from October 25, 2026, together with the Android app launch.</p>
+<p>Effective November 4, 2026 (announced October 28, 2026). Until then, the previous version applies (effective October 29, 2026, or October 25, 2026 before that; see the revision history). However, the book-search changes in the book database table apply from the day the app update that includes them is released. The random device number and the Google ML Kit diagnostic data for Android text recognition apply from October 25, 2026, together with the Android app launch.</p>
 <p>This is the English version of our privacy policy, prepared for users outside Korea. If it conflicts with the Korean version, the Korean version prevails, except where the law of your country of residence requires otherwise.</p>
 
 <h2>At a glance</h2>
@@ -94,8 +94,9 @@
 <table>
 <thead><tr><th>Recipient</th><th>What for</th><th>What they receive</th></tr></thead>
 <tbody>
-<tr><td>Supabase, Inc. (processor; data stored in Seoul, South Korea, on AWS)</td><td>Sign-in, storage of backups and feed posts, relaying Android text-recognition requests and Japanese-language book searches</td><td>The account and backup data described in Section 2, or the photo or search term being relayed</td></tr>
-<tr><td>Google LLC (processor)</td><td>Google Cloud Vision for Android text recognition; Google Books for book title search when the app language is Japanese; Google sign-in; Gmail for receiving and storing email you send us</td><td>The photo or search term; for sign-in, the data Google handles as an identity provider; your email address and message</td></tr>
+<tr><td>Supabase, Inc. (processor; data stored in Seoul, South Korea, on AWS)</td><td>Sign-in, storage of backups and feed posts, relaying Android text-recognition requests and book searches</td><td>The account and backup data described in Section 2, or the photo or search term being relayed</td></tr>
+<tr><td>Google LLC (processor)</td><td>Google Cloud Vision for Android text recognition; Google Books for book title search when Rakuten Books or Open Library does not respond, and for finding a cover for a book added without one; Google sign-in; Gmail for receiving and storing email you send us</td><td>The photo or search term; for sign-in, the data Google handles as an identity provider; your email address and message</td></tr>
+<tr><td>Rakuten Group, Inc. (Japan)</td><td>Rakuten Books API for book title search when the app language is Japanese</td><td>The search term, through our Supabase server function</td></tr>
 <tr><td>Apple Inc.</td><td>Sign in with Apple; App Store payments</td><td>As described in Apple&rsquo;s privacy policy</td></tr>
 <tr><td>Google Play</td><td>Payments on Android</td><td>As described in Google&rsquo;s privacy policy</td></tr>
 </tbody>
@@ -104,8 +105,9 @@
 <table>
 <thead><tr><th>Feature</th><th>What is sent</th><th>Sent to</th></tr></thead>
 <tbody>
-<tr><td>Book search by title (English app language)</td><td>The title or other search term</td><td>Open Library (Internet Archive, USA)</td></tr>
-<tr><td>Book search by title (Japanese app language)</td><td>The title or other search term</td><td>Google Books API (Google LLC, USA), through our Supabase server function</td></tr>
+<tr><td>Book search by title (English app language)</td><td>The title or other search term</td><td>Open Library (Internet Archive, USA); if it does not respond, Google Books API (Google LLC, USA), through our Supabase server function</td></tr>
+<tr><td>Book search by title (Japanese app language)</td><td>The title or other search term</td><td>Rakuten Books API (Rakuten Group, Inc., Japan); if it does not respond, Google Books API (Google LLC, USA), both through our Supabase server function</td></tr>
+<tr><td>Finding a cover when a book is added without one</td><td>The book&rsquo;s title and author</td><td>Google Books API (Google LLC, USA), through our Supabase server function</td></tr>
 <tr><td>Book search by title (Korean app language)</td><td>The title or other search term</td><td>Kakao book search API (Korea)</td></tr>
 <tr><td>Barcode lookup, ISBN starting 978-4 (Japanese books)</td><td>The ISBN</td><td>National Diet Library of Japan search API; Open Library</td></tr>
 <tr><td>Barcode lookup, other foreign books</td><td>The ISBN</td><td>Open Library</td></tr>
@@ -178,6 +180,7 @@
 <li>October 25, 2026 — First English version. It follows the Korean notice effective the same day (reading-timer notifications, book lookup services including Open Library, the National Diet Library of Japan and Google Books, target time, app language stored with feed posts).</li>
 <li>October 25, 2026 — Added the random device number used to limit daily text recognition per device on Android, and the diagnostic data that on-device recognition (Google ML Kit) may send to Google (applies from the Android app launch).</li>
 <li>October 29, 2026 — Added how we handle email you send us (Gmail, legal basis, retention), optional permissions, and a fixed 3-year retention period for letters (announced October 22, 2026).</li>
+<li>November 4, 2026 — Japanese-language title search now uses Rakuten Books (Google Books if it does not respond); added the Google Books fallback for English-language search and the cover lookup (title and author) for books added without a cover (announced October 28, 2026).</li>
 </ul>
 </article>
 <footer class="foot"><span>© 2026 냥냥비트</span><a href="mailto:sokurihj@gmail.com">sokurihj@gmail.com</a></footer>
